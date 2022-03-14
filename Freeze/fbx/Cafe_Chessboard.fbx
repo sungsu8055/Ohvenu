@@ -8,11 +8,11 @@ FBXHeaderExtension:  {
 		Version: 1000
 		Year: 2022
 		Month: 3
-		Day: 10
-		Hour: 21
-		Minute: 53
-		Second: 1
-		Millisecond: 337
+		Day: 14
+		Hour: 20
+		Minute: 4
+		Second: 57
+		Millisecond: 933
 	}
 	Creator: "FBX SDK/FBX Plugins version 2020.0.1"
 	SceneInfo: "SceneInfo::GlobalInfo", "UserData" {
@@ -34,13 +34,13 @@ FBXHeaderExtension:  {
 			P: "Original|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "Original|ApplicationName", "KString", "", "", "3ds Max"
 			P: "Original|ApplicationVersion", "KString", "", "", "2021"
-			P: "Original|DateTime_GMT", "DateTime", "", "", "10/03/2022 12:53:01.336"
+			P: "Original|DateTime_GMT", "DateTime", "", "", "14/03/2022 11:04:57.932"
 			P: "Original|FileName", "KString", "", "", "C:\Users\78h\Desktop\3D-Modeling\Freeze\fbx\Cafe_Chessboard.fbx"
 			P: "LastSaved", "Compound", "", ""
 			P: "LastSaved|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "LastSaved|ApplicationName", "KString", "", "", "3ds Max"
 			P: "LastSaved|ApplicationVersion", "KString", "", "", "2021"
-			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "10/03/2022 12:53:01.336"
+			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "14/03/2022 11:04:57.932"
 			P: "Original|ApplicationActiveProject", "KString", "", "", "C:\Users\78h\Documents\3ds Max 2021"
 			P: "Original|ApplicationNativeFile", "KString", "", "", "C:\Users\78h\Desktop\3D-Modeling\Freeze\3ds\Cafe_Interior.max"
 		}
@@ -77,7 +77,7 @@ GlobalSettings:  {
 
 Documents:  {
 	Count: 1
-	Document: 1877184133232, "", "Scene" {
+	Document: 1749286955392, "", "Scene" {
 		Properties70:  {
 			P: "SourceObject", "object", "", ""
 			P: "ActiveAnimStackName", "KString", "", "", ""
@@ -277,7 +277,7 @@ Definitions:  {
 ;------------------------------------------------------------------
 
 Objects:  {
-	Geometry: 1877192050288, "Geometry::", "Mesh" {
+	Geometry: 1748342902304, "Geometry::", "Mesh" {
 		Properties70:  {
 			P: "Color", "ColorRGB", "Color", "",0.345098039215686,0.345098039215686,0.882352941176471
 		}
@@ -374,7 +374,7 @@ Objects:  {
 			}
 		}
 	}
-	Geometry: 1877192028336, "Geometry::", "Mesh" {
+	Geometry: 1748342902752, "Geometry::", "Mesh" {
 		Properties70:  {
 			P: "Color", "ColorRGB", "Color", "",0.650980392156863,0.898039215686275,0.898039215686275
 		}
@@ -447,7 +447,7 @@ Objects:  {
 			}
 		}
 	}
-	Geometry: 1877192055664, "Geometry::", "Mesh" {
+	Geometry: 1748342916640, "Geometry::", "Mesh" {
 		Properties70:  {
 			P: "Color", "ColorRGB", "Color", "",0.650980392156863,0.898039215686275,0.898039215686275
 		}
@@ -520,7 +520,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 1877762724176, "Model::Chessboard", "Mesh" {
+	Model: 1748315920560, "Model::Chessboard", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "PreRotation", "Vector3D", "Vector", "",-90,-0,0
@@ -528,13 +528,14 @@ Objects:  {
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
 			P: "DefaultAttributeIndex", "int", "Integer", "",0
-			P: "Lcl Translation", "Lcl Translation", "", "A",269.999420166016,90.5743179321289,-459.998809814453
+			P: "Lcl Translation", "Lcl Translation", "", "A",267.011260986328,90.5743179321289,-463.222442626953
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,-0,90.0000025044781
 			P: "MaxHandle", "int", "Integer", "UH",269
 		}
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Model: 1877762706640, "Model::Hint_Piece002", "Mesh" {
+	Model: 1748315929328, "Model::Hint_Piece002", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "InheritType", "enum", "", "",1
@@ -546,7 +547,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Model: 1877762697872, "Model::Hint_Piece001", "Mesh" {
+	Model: 1748315960016, "Model::Hint_Piece001", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "InheritType", "enum", "", "",1
@@ -558,7 +559,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Material: 1877560863472, "Material::Plastic_ChessTile", "" {
+	Material: 1749883354928, "Material::Plastic_ChessTile", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -580,7 +581,7 @@ Objects:  {
 			P: "Reflectivity", "double", "Number", "",0
 		}
 	}
-	Material: 1877560868272, "Material::Wood", "" {
+	Material: 1749883363088, "Material::Wood", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -602,7 +603,7 @@ Objects:  {
 			P: "Reflectivity", "double", "Number", "",0
 		}
 	}
-	Material: 1877560861552, "Material::Plastic_W", "" {
+	Material: 1749883408208, "Material::Plastic_W", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -624,7 +625,7 @@ Objects:  {
 			P: "Reflectivity", "double", "Number", "",0
 		}
 	}
-	Video: 1877560864912, "Video::Map #3", "Clip" {
+	Video: 1749883388528, "Video::Map #3", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "C:\Users\78h\Desktop\3D-Modeling\Freeze\tex\Chessboard\Cafe_Chessboard_Plastic_ChessTile_BaseMap.png"
@@ -634,7 +635,7 @@ Objects:  {
 		Filename: "C:\Users\78h\Desktop\3D-Modeling\Freeze\tex\Chessboard\Cafe_Chessboard_Plastic_ChessTile_BaseMap.png"
 		RelativeFilename: "..\tex\Chessboard\Cafe_Chessboard_Plastic_ChessTile_BaseMap.png"
 	}
-	Texture: 1877560859632, "Texture::Map #3", "" {
+	Texture: 1749883358768, "Texture::Map #3", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::Map #3"
@@ -658,62 +659,62 @@ Objects:  {
 Connections:  {
 	
 	;Model::Chessboard, Model::RootNode
-	C: "OO",1877762724176,0
+	C: "OO",1748315920560,0
 	
 	;Model::Hint_Piece002, Model::Chessboard
-	C: "OO",1877762706640,1877762724176
+	C: "OO",1748315929328,1748315920560
 	
 	;Model::Hint_Piece001, Model::Chessboard
-	C: "OO",1877762697872,1877762724176
+	C: "OO",1748315960016,1748315920560
 	
 	;Geometry::, Model::Chessboard
-	C: "OO",1877192050288,1877762724176
+	C: "OO",1748342902304,1748315920560
 	
 	;Material::Plastic_ChessTile, Model::Chessboard
-	C: "OO",1877560863472,1877762724176
+	C: "OO",1749883354928,1748315920560
 	
 	;Material::Wood, Model::Chessboard
-	C: "OO",1877560868272,1877762724176
+	C: "OO",1749883363088,1748315920560
 	
 	;Material::Plastic_W, Model::Chessboard
-	C: "OO",1877560861552,1877762724176
+	C: "OO",1749883408208,1748315920560
 	
 	;Material::Plastic_W, Model::Chessboard
-	C: "OO",1877560861552,1877762724176
+	C: "OO",1749883408208,1748315920560
 	
 	;Geometry::, Model::Hint_Piece002
-	C: "OO",1877192028336,1877762706640
+	C: "OO",1748342902752,1748315929328
 	
 	;Material::Plastic_ChessTile, Model::Hint_Piece002
-	C: "OO",1877560863472,1877762706640
+	C: "OO",1749883354928,1748315929328
 	
 	;Material::Wood, Model::Hint_Piece002
-	C: "OO",1877560868272,1877762706640
+	C: "OO",1749883363088,1748315929328
 	
 	;Material::Plastic_W, Model::Hint_Piece002
-	C: "OO",1877560861552,1877762706640
+	C: "OO",1749883408208,1748315929328
 	
 	;Material::Plastic_W, Model::Hint_Piece002
-	C: "OO",1877560861552,1877762706640
+	C: "OO",1749883408208,1748315929328
 	
 	;Geometry::, Model::Hint_Piece001
-	C: "OO",1877192055664,1877762697872
+	C: "OO",1748342916640,1748315960016
 	
 	;Material::Plastic_ChessTile, Model::Hint_Piece001
-	C: "OO",1877560863472,1877762697872
+	C: "OO",1749883354928,1748315960016
 	
 	;Material::Wood, Model::Hint_Piece001
-	C: "OO",1877560868272,1877762697872
+	C: "OO",1749883363088,1748315960016
 	
 	;Material::Plastic_W, Model::Hint_Piece001
-	C: "OO",1877560861552,1877762697872
+	C: "OO",1749883408208,1748315960016
 	
 	;Material::Plastic_W, Model::Hint_Piece001
-	C: "OO",1877560861552,1877762697872
+	C: "OO",1749883408208,1748315960016
 	
 	;Texture::Map #3, Material::Plastic_ChessTile
-	C: "OP",1877560859632,1877560863472, "DiffuseColor"
+	C: "OP",1749883358768,1749883354928, "DiffuseColor"
 	
 	;Video::Map #3, Texture::Map #3
-	C: "OO",1877560864912,1877560859632
+	C: "OO",1749883388528,1749883358768
 }

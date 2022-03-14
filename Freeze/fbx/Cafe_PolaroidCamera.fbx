@@ -8,11 +8,11 @@ FBXHeaderExtension:  {
 		Version: 1000
 		Year: 2022
 		Month: 3
-		Day: 10
-		Hour: 21
+		Day: 14
+		Hour: 19
 		Minute: 52
-		Second: 43
-		Millisecond: 814
+		Second: 47
+		Millisecond: 433
 	}
 	Creator: "FBX SDK/FBX Plugins version 2020.0.1"
 	SceneInfo: "SceneInfo::GlobalInfo", "UserData" {
@@ -34,13 +34,13 @@ FBXHeaderExtension:  {
 			P: "Original|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "Original|ApplicationName", "KString", "", "", "3ds Max"
 			P: "Original|ApplicationVersion", "KString", "", "", "2021"
-			P: "Original|DateTime_GMT", "DateTime", "", "", "10/03/2022 12:52:43.813"
+			P: "Original|DateTime_GMT", "DateTime", "", "", "14/03/2022 10:52:47.430"
 			P: "Original|FileName", "KString", "", "", "C:\Users\78h\Desktop\3D-Modeling\Freeze\fbx\Cafe_PolaroidCamera.fbx"
 			P: "LastSaved", "Compound", "", ""
 			P: "LastSaved|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "LastSaved|ApplicationName", "KString", "", "", "3ds Max"
 			P: "LastSaved|ApplicationVersion", "KString", "", "", "2021"
-			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "10/03/2022 12:52:43.813"
+			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "14/03/2022 10:52:47.430"
 			P: "Original|ApplicationActiveProject", "KString", "", "", "C:\Users\78h\Documents\3ds Max 2021"
 			P: "Original|ApplicationNativeFile", "KString", "", "", "C:\Users\78h\Desktop\3D-Modeling\Freeze\3ds\Cafe_Interior.max"
 		}
@@ -77,7 +77,7 @@ GlobalSettings:  {
 
 Documents:  {
 	Count: 1
-	Document: 1877565745792, "", "Scene" {
+	Document: 1748324866256, "", "Scene" {
 		Properties70:  {
 			P: "SourceObject", "object", "", ""
 			P: "ActiveAnimStackName", "KString", "", "", ""
@@ -227,7 +227,7 @@ Definitions:  {
 ;------------------------------------------------------------------
 
 Objects:  {
-	Geometry: 1877192055664, "Geometry::", "Mesh" {
+	Geometry: 1748342902304, "Geometry::", "Mesh" {
 		Properties70:  {
 			P: "Color", "ColorRGB", "Color", "",0.333333333333333,0.109803921568627,0.694117647058824
 		}
@@ -441,7 +441,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 1877175702464, "Model::Polaroid", "Mesh" {
+	Model: 1748343675952, "Model::Polaroid", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "PreRotation", "Vector3D", "Vector", "",-90,-0,0
@@ -449,14 +449,14 @@ Objects:  {
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
 			P: "DefaultAttributeIndex", "int", "Integer", "",0
-			P: "Lcl Translation", "Lcl Translation", "", "A",267.121673583984,98.1521453857422,-499.067077636719
-			P: "Lcl Rotation", "Lcl Rotation", "", "A",90.0000093346676,-0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",307.635772705078,23.3473739624023,-51.1654167175293
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",50.4313183296962,-6.40865708388698,-97.6926599602722
 			P: "MaxHandle", "int", "Integer", "UH",404
 		}
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Material: 1877560882672, "Material::Plastic_Ivory", "" {
+	Material: 1749883407248, "Material::Plastic_Ivory", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -478,7 +478,7 @@ Objects:  {
 			P: "Reflectivity", "double", "Number", "",0
 		}
 	}
-	Material: 1877560886032, "Material::Plastic_DG", "" {
+	Material: 1749883407728, "Material::Plastic_DG", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -500,7 +500,7 @@ Objects:  {
 			P: "Reflectivity", "double", "Number", "",0
 		}
 	}
-	Material: 1877560861552, "Material::Plastic_F", "" {
+	Material: 1749883388528, "Material::Plastic_F", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -522,7 +522,7 @@ Objects:  {
 			P: "Reflectivity", "double", "Number", "",0
 		}
 	}
-	Material: 1877560872592, "Material::Lens", "" {
+	Material: 1749883402928, "Material::Lens", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -552,26 +552,26 @@ Objects:  {
 Connections:  {
 	
 	;Model::Polaroid, Model::RootNode
-	C: "OO",1877175702464,0
+	C: "OO",1748343675952,0
 	
 	;Geometry::, Model::Polaroid
-	C: "OO",1877192055664,1877175702464
+	C: "OO",1748342902304,1748343675952
 	
 	;Material::Plastic_Ivory, Model::Polaroid
-	C: "OO",1877560882672,1877175702464
+	C: "OO",1749883407248,1748343675952
 	
 	;Material::Plastic_DG, Model::Polaroid
-	C: "OO",1877560886032,1877175702464
+	C: "OO",1749883407728,1748343675952
 	
 	;Material::Plastic_F, Model::Polaroid
-	C: "OO",1877560861552,1877175702464
+	C: "OO",1749883388528,1748343675952
 	
 	;Material::Lens, Model::Polaroid
-	C: "OO",1877560872592,1877175702464
+	C: "OO",1749883402928,1748343675952
 	
 	;Material::Lens, Model::Polaroid
-	C: "OO",1877560872592,1877175702464
+	C: "OO",1749883402928,1748343675952
 	
 	;Material::Plastic_DG, Model::Polaroid
-	C: "OO",1877560886032,1877175702464
+	C: "OO",1749883407728,1748343675952
 }

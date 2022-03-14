@@ -8,11 +8,11 @@ FBXHeaderExtension:  {
 		Version: 1000
 		Year: 2022
 		Month: 3
-		Day: 4
-		Hour: 21
-		Minute: 28
-		Second: 16
-		Millisecond: 951
+		Day: 14
+		Hour: 19
+		Minute: 53
+		Second: 11
+		Millisecond: 931
 	}
 	Creator: "FBX SDK/FBX Plugins version 2020.0.1"
 	SceneInfo: "SceneInfo::GlobalInfo", "UserData" {
@@ -34,13 +34,13 @@ FBXHeaderExtension:  {
 			P: "Original|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "Original|ApplicationName", "KString", "", "", "3ds Max"
 			P: "Original|ApplicationVersion", "KString", "", "", "2021"
-			P: "Original|DateTime_GMT", "DateTime", "", "", "04/03/2022 12:28:16.951"
+			P: "Original|DateTime_GMT", "DateTime", "", "", "14/03/2022 10:53:11.926"
 			P: "Original|FileName", "KString", "", "", "C:\Users\78h\Desktop\3D-Modeling\Freeze\fbx\Cafe_Paper.fbx"
 			P: "LastSaved", "Compound", "", ""
 			P: "LastSaved|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "LastSaved|ApplicationName", "KString", "", "", "3ds Max"
 			P: "LastSaved|ApplicationVersion", "KString", "", "", "2021"
-			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "04/03/2022 12:28:16.951"
+			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "14/03/2022 10:53:11.926"
 			P: "Original|ApplicationActiveProject", "KString", "", "", "C:\Users\78h\Documents\3ds Max 2021"
 			P: "Original|ApplicationNativeFile", "KString", "", "", "C:\Users\78h\Desktop\3D-Modeling\Freeze\3ds\Cafe_Interior.max"
 		}
@@ -77,7 +77,7 @@ GlobalSettings:  {
 
 Documents:  {
 	Count: 1
-	Document: 2133227106528, "", "Scene" {
+	Document: 1749286949760, "", "Scene" {
 		Properties70:  {
 			P: "SourceObject", "object", "", ""
 			P: "ActiveAnimStackName", "KString", "", "", ""
@@ -198,7 +198,7 @@ Definitions:  {
 ;------------------------------------------------------------------
 
 Objects:  {
-	Geometry: 2134638513840, "Geometry::", "Mesh" {
+	Geometry: 1748342915296, "Geometry::", "Mesh" {
 		Properties70:  {
 			P: "Color", "ColorRGB", "Color", "",0.443137254901961,0.529411764705882,0.0235294117647059
 		}
@@ -263,7 +263,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 2134183795952, "Model::Paper_A4", "Mesh" {
+	Model: 1749243908080, "Model::Paper_A4", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "PreRotation", "Vector3D", "Vector", "",-90,-0,0
@@ -272,8 +272,8 @@ Objects:  {
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
 			P: "GeometricRotation", "Vector3D", "Vector", "",-90,90,0
 			P: "DefaultAttributeIndex", "int", "Integer", "",0
-			P: "Lcl Translation", "Lcl Translation", "", "A",268.057220458984,105.783737182617,-402.535614013672
-			P: "Lcl Rotation", "Lcl Rotation", "", "A",90.0000025044781,-0,-90.0000025044781
+			P: "Lcl Translation", "Lcl Translation", "", "A",341.469665527344,84.2497863769531,-43.1174354553223
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,-0,-120.000003402851
 			P: "MaxHandle", "int", "Integer", "UH",294
 		}
 		Shading: T
@@ -287,8 +287,8 @@ Objects:  {
 Connections:  {
 	
 	;Model::Paper_A4, Model::RootNode
-	C: "OO",2134183795952,0
+	C: "OO",1749243908080,0
 	
 	;Geometry::, Model::Paper_A4
-	C: "OO",2134638513840,2134183795952
+	C: "OO",1748342915296,1749243908080
 }
