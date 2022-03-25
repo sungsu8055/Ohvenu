@@ -6,8 +6,14 @@ public class AetManager : MonoBehaviour
 {
     public GameObject aet;
 
+    public Player player;
+
+
     void Start()
     {
+        // 오브젝트를 불러오는 부분이 코루틴 실행보다 뒤에 실행되어 코루틴 안에서 불러오지 못하는 문제 발생
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+
         StartCoroutine(Create());
     }
 
@@ -16,10 +22,9 @@ public class AetManager : MonoBehaviour
         
     }
 
-
     public IEnumerator Create()
     {
-        while (true)
+        while (player.isPlaying)
         {
             yield return new WaitForSeconds(0.5f);
             GameObject a = Instantiate(aet);

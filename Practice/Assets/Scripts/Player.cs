@@ -6,11 +6,17 @@ public class Player : MonoBehaviour
 {
     public Vector3 move;
 
+    public Vector3 cameraOffset;
+
+    public bool isPlaying;
+
     public bool isFeed = true;
 
     public GameObject players;
 
     public GameObject playersMove;
+
+    
 
     public List<GameObject> bodyList;
 
@@ -27,42 +33,29 @@ public class Player : MonoBehaviour
 
         // while문은 계속 실행 되기 때문에 start에서 한 번만 실행 해주면 업데이트와 같은 효과
         StartCoroutine(Movement());
+
+        cameraOffset = new Vector3(0, 60, 0);
+
+        
     }
 
     // 업데이트는 콜백 함수임 / 이동과 같은 상시 활성 기능을 돌리기 위해 업데이트에 부하를 줄 필요가 없음
-    void Update()
-    {
-        // 키 입력 기능과 입력 값을 받아 실행하는 부분을 나누어 줌
-        // 추후 키 입력 방식을 바꿀 때 함수로 빼서 쓰면 됨으로 훨씬 용이함 
-        /*/
-        if(Input.GetKey(KeyCode.DownArrow))
-        {
-            move = Vector3.back;
-        }
-        if (Input.GetKey(KeyCode.UpArrow))
-        {
-            move = Vector3.forward;
-        }
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            move = Vector3.left;
-        }
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            move = Vector3.right;
-        }
-        /*/
-
-        MobileMovement();
+    void LateUpdate()
+    {     
+        MovementInput();
 
         // 정지 기능
         if (Input.GetKey(KeyCode.Space))
         {
             move = Vector3.zero;
         }
+
+        Camera.main.transform.position = bodyList[0].transform.position + cameraOffset;
     }
 
-    void MobileMovement()
+    // 키 입력 기능과 입력 값을 받아 실행하는 부분을 나누어 줌
+    // 추후 키 입력 방식을 바꿀 때 함수로 빼서 쓰면 됨으로 훨씬 용이함 
+    void MovementInput()
     {
         if (Input.GetKey(KeyCode.DownArrow))
         {
@@ -82,13 +75,31 @@ public class Player : MonoBehaviour
         }
     }
 
+    public void InputDown()
+    {
+        move = Vector3.back;
+    }
+    public void InputUP()
+    {
+        move = Vector3.forward;
+    }
+    public void InputLeft()
+    {
+        move = Vector3.left;
+    }
+    public void InputRight()
+    {
+        move = Vector3.right;
+    }
+
     IEnumerator Movement()
     {
         // while문은 계속 반복 됨으로 브레이크가 필수로 있어야함
-        while (true)
+        // while문의 경우 한 번 빠져나오면 재사용이 불가능함 함수를 다시 호출해야만 사용 가능
+        while (isPlaying)
         {
             
-            yield return new WaitForSeconds(0.0001f);
+            yield return new WaitForSeconds(0.1f);
 
             if (isFeed)
             {
@@ -99,12 +110,10 @@ public class Player : MonoBehaviour
                 else 
                 {
                     // 0번이 1번 앞으로 가면 순서 인덱스를 바꿔야함
-                    Debug.Log("배열 변환");
-                    
                     bodyList[bodyList.Count - 1].transform.position = bodyList[0].transform.position + move;
                     bodyList[0].GetComponent<MeshRenderer>().material.color = Color.blue;
 
-                    bodyList.Insert(0, bodyList[bodyList.Count - 1]);                 
+                    bodyList.Insert(0, bodyList[bodyList.Count - 1]);
                     bodyList.RemoveAt(bodyList.Count - 1);
                     bodyList[0].GetComponent<MeshRenderer>().material.color = Color.red;
                 }
@@ -116,6 +125,15 @@ public class Player : MonoBehaviour
                 bodyList.Add (playersMove);
                 // 카운트로 리스트 수를 불러옴(2 -1 = 1마지막 리스트 수) 
                 bodyList[bodyList.Count-1].transform.position = bodyList[0].transform.position + move;
+
+                /*/
+                // 먹이를 먹을 수록 크기가 커짐
+                for(int i = 0; i < bodyList.Count; i++)
+                {
+                    bodyList[i].transform.localScale += new Vector3(0.1f, 0.1f, 0.1f);
+                }
+                /*/
+
                 isFeed = true;
             }
         }

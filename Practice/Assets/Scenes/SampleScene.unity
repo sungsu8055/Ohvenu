@@ -387,6 +387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   move: {x: 0, y: 0, z: 0}
+  isFeed: 1
   players: {fileID: 300164725782225907, guid: 58e349a0f55cba145bba84242ff78dad, type: 3}
   playersMove: {fileID: 0}
   bodyList: []
@@ -433,4 +434,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fa753a846d65df4fb56dcfc969dfa64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  map: {fileID: 2024509987042100228, guid: ad548f18e8a672947bf17d76aaba33a6, type: 3}
+  map: {fileID: 270504087707571935, guid: ad548f18e8a672947bf17d76aaba33a6, type: 3}

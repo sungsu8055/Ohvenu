@@ -27,14 +27,17 @@ public class MapManager : MonoBehaviour
             for(int z = 0; z < 100; z++)
             {
                 GameObject a = Instantiate(map);
+                a.name = "x : " + x + " z : " + z;
                 a.transform.position = new Vector3(x,0,z);
 
                 // 짝수 칸과 홀수 칸에 번갈아 매터리얼 색상 변경
                 // 나머지 연산 후 0으로 떨어지면 짝수 1이 나오면 홀수가 되는 것으로 좌표의 짝수 홀수를 구분
+                /*/
                 if(z % 2 == 0 && x % 2 == 0)
                     a.GetComponent<MeshRenderer>().material.color = new Color32(0,0,0,255);
                 else if(z % 2 == 1 && x % 2 == 1)
                     a.GetComponent<MeshRenderer>().material.color = new Color32(0, 0, 0, 255);
+                /*/
 
                 // 부모 오브젝트 설정
                 a.transform.SetParent(parent.transform);
